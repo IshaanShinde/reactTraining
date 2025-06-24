@@ -7,10 +7,10 @@ const A2 = () => {
     const [ text, setText ] = useState('');
 
     return (
-        <div className="page">
+        <>
             <A2InputBox value={text} onChange={setText}/>
             <A2Textiewer value={text} />
-        </div>
+        </>
     )
 };;
 

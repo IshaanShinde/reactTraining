@@ -32,7 +32,9 @@
 
 
 .subComponent {
+    border: 2px solid var(--component-border);
     background-color: var(--bg);
+
     padding: 1rem;
     border-radius: 8px;
 }
