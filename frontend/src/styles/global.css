@@ -8,12 +8,14 @@
     padding: 0;
     box-sizing: border-box;
     transition: background-color 0.3s, border-color 0.3s;
+
+    color: var(--text);
+    font-family: Helvetica;
 }
 
 html, body, #root {
     height: 100%;
     background-color: var(--bg);
-    color: var(--text);
 }
 
 .fit { 
@@ -22,4 +24,8 @@ html, body, #root {
 
 .fill {
     flex: 1 1 auto;
+}
+
+.input {
+    background-color: black;
 }

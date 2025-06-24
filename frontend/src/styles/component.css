@@ -24,10 +24,10 @@
 
     flex: 0 0 auto;
 }
-    .component:hover {
+    /* .component:hover {
         border: 2px solid var(--hover-border);
         background-color: var(--hover-bg);
-    }
+    } */
 
 
 
