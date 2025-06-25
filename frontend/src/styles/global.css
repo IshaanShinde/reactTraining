@@ -1,6 +1,7 @@
 @import 'theme.css';
 @import 'component.css';
 @import 'button.css';
+@import 'form.css';
 
 * {
     margin: 0;
