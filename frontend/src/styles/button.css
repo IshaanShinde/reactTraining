@@ -13,7 +13,6 @@
         border: 2px solid var(--btn-border);
         background-color: var(--bg);
         color: var(--btn-text);
-        border-radius: 8px;
         cursor: pointer;
         transition: all 0.2s ease;
         display: inline-flex;

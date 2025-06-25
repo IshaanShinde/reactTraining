@@ -1,25 +1,24 @@
-.label {
-    margin-left: 0.2rem;
-}
-
-.formGroup {
+form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
 }
-    .formComponent {
-        padding: 1rem;
-        margin-bottom: 1rem;
-        
-        border: 2px solid var(--btn-border);
-        background-color: var(--bg);
-        color: var(--btn-text);
+    
+label {
+    margin-left: 0.2rem;
+}
 
-        border-radius: 8px;
+input, select {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    border: 2px solid var(--btn-border);
+    background-color: var(--bg);
+    color: var(--btn-text);
 
-        cursor: pointer;
-        transition: all 0.2s ease;
-        justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    justify-content: center;
         align-items: center;
     }

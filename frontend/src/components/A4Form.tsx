@@ -4,29 +4,26 @@
 const A4Form = () => {
     return (
         <div className="component">
-            <form className="formGroup">
+            <form>
                     
-                    <label className="label">First Name</label>
+                    <label>First Name</label>
                     <input
-                        className="formComponent"
                         type='text'
                         id='firstName'
                         name='firstName'
                         placeholder='First Name'
                     />
 
-                    <label className="label">Last Name</label>
+                    <label>Last Name</label>
                     <input
-                        className="formComponent"
                         type='text'
                         id='lastName'
                         name='lastName'
                         placeholder='Last Name'
                     />
                     
-                    <label className="label">Role</label>
+                    <label>Role</label>
                     <select
-                        className="formComponent"
                         id='role'
                         name='role'
                     >
