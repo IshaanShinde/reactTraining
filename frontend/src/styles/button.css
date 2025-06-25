@@ -1,0 +1,50 @@
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+    .button {
+        flex: 1;
+        min-width: 0;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        text-decoration: none; /* link class underline reset */ 
+        white-space: nowrap;
+        border: 2px solid var(--btn-border);
+        background-color: var(--bg);
+        color: var(--btn-text);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+        .button:hover {
+            background-color: var(--btn-hover-bg);
+            border-color: var(--btn-hover-border);
+            color: var(--btn-hover-text);
+        }
+    
+    /* Primary Button Variant */
+    .button--primary {
+        background-color: var(--component-border);
+        color: var(--text);
+        border-color: var(--component-border);
+    }
+        .button--primary:hover {
+            background-color: var(--hover-border);
+            border-color: var(--hover-border);
+        }
+    
+    /* Outline Button Variant */
+    .button--outline {
+        background-color: transparent;
+        color: var(--text);
+        border-color: var(--component-border);
+    }
+        .button--outline:hover {
+            background-color: var(--hover-bg);
+            border-color: var(--hover-border);
+        }
