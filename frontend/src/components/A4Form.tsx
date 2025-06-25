@@ -7,30 +7,16 @@ const A4Form = () => {
             <form>
                     
                     <label>First Name</label>
-                    <input
-                        type='text'
-                        id='firstName'
-                        name='firstName'
-                        placeholder='First Name'
-                    />
+                    <input type='text' id='firstName' name='firstName' placeholder='First Name'/>
 
                     <label>Last Name</label>
-                    <input
-                        type='text'
-                        id='lastName'
-                        name='lastName'
-                        placeholder='Last Name'
-                    />
+                    <input type='text' id='lastName' name='lastName' placeholder='Last Name'/>
                     
                     <label>Role</label>
-                    <select
-                        id='role'
-                        name='role'
-                    >
+                    <select id='role' name='role'>
                         <option value='Owner'>Owner</option>
                         <option value='User'>User</option>
                         <option value='Admin'>Admin</option>
-
                     </select>
 
             </form>
@@ -43,5 +29,3 @@ const A4Form = () => {
 };
 
 export default A4Form;
-
-
