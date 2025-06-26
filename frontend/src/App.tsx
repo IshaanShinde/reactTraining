@@ -14,15 +14,18 @@ function App() {
 
     return (
         <Router>
-            <Routes>
-                <Route element={ <Layout /> }>
-                    <Route path='/' element={ <Home /> }/>
-                    <Route path='/A1' element={ <A1/> }/>
-                    <Route path='/A2' element={ <A2/> }/>
-                    <Route path='/A3' element={ <A3/> }/>
-                    <Route path='/A4' element={ <A4/> }/>
-                </Route>
-            </Routes>
+        <Routes>
+        <Route element={ <Layout /> }>
+
+            <Route path='/' element={ <Home /> }/>
+            
+            <Route path='/A1' element={ <A1/> }/>
+            <Route path='/A2' element={ <A2/> }/>
+            <Route path='/A3' element={ <A3/> }/>
+            <Route path='/A4' element={ <A4/> }/>
+
+        </Route>
+        </Routes>
         </Router> 
     );
 };
