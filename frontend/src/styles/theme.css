@@ -32,6 +32,7 @@
     --clh-btn-border: #adb5bd;
 
     /* Active Theme (Dark by default) */
+    --error: #ff3d3d;
     --bg: var(--cd-bg);
     --text: var(--cd-text);
     --component-border: var(--cd-component-border);
