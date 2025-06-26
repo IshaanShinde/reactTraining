@@ -25,9 +25,9 @@ const A4Form = () => {
     const validate = (values: A4FormValues) => {
         let errors: A4FormErrors = {}
 
-        if (!values.firstName) { errors.firstName = 'First Name Required'}
-        if (!values.lastName) { errors.lastName = 'Last Name Required'}
-        if (!values.role) { errors.role = 'Role Required'}
+        if (!values.firstName) errors.firstName = 'First Name Required';
+        if (!values.lastName) errors.lastName = 'Last Name Required';
+        if (!values.role) errors.role = 'Role Required';
 
         return errors
     }
@@ -36,6 +36,7 @@ const A4Form = () => {
         initialValues,
         onSubmit,
         validate,
+        validateOnBlur: true,
         validateOnChange: false
     });
 
@@ -46,19 +47,22 @@ const A4Form = () => {
                     <label>First Name</label>
                     { formik.errors.firstName ? <div className="error">{formik.errors.firstName}</div> : null }
                     <input type='text' id='firstName' name='firstName' placeholder='First Name' 
-                    onChange={formik.handleChange} 
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur} 
                     value={formik.values.firstName}/>
 
                     <label>Last Name{ formik.errors.lastName ? <div className="error">{formik.errors.lastName}</div> : null }</label>
                     
                     <input type='text' id='lastName' name='lastName' placeholder='Last Name' 
                     onChange={formik.handleChange} 
+                    onBlur={formik.handleBlur}
                     value={formik.values.lastName}/>
                     
                     <label>Role</label>
                     { formik.errors.role ? <div className="error">{formik.errors.role}</div> : null }
                     <select id='role' name='role' 
                     onChange={formik.handleChange} 
+                    onBlur={formik.handleBlur}
                     value={formik.values.role}>
                         <option value=''>Select</option>
                         <option value='Owner'>Owner</option>

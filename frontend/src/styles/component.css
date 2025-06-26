@@ -1,5 +1,5 @@
 .page {
-    border: 2px solid var(--component-border);
+    /* border: 2px solid var(--component-border); */
     background-color: var(--bg);
 
     min-width: 100%;
