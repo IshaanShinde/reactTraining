@@ -1,48 +1,56 @@
+import * as Yup from 'yup';
 import { useFormik } from "formik";
 
-interface A4FormValues {
+interface A4FormYupValues {
     firstName: string;
     lastName: string;
     role: string;
 }
 
-interface A4FormErrors {
-    firstName?: string;
-    lastName?: string;
-    role?: string;
-}
+// interface A4FormYupErrors {
+//     firstName?: string;
+//     lastName?: string;
+//     role?: string;
+// }
 
-const A4Form = () => {
+const A4FormYup = () => {
 
     const initialValues = {
         firstName: '',
         lastName: '',
         role: ''
     }
-    const onSubmit = (values: A4FormValues) => {
+    const onSubmit = (values: A4FormYupValues) => {
         console.log(values)
     }
-    const validate = (values: A4FormValues) => {
-        let errors: A4FormErrors = {}
+    // const validate = (values: A4FormYupValues) => {
+    //     let errors: A4FormYupErrors = {}
 
-        if (!values.firstName) errors.firstName = 'First Name Required';
-        if (!values.lastName) errors.lastName = 'Last Name Required';
-        if (!values.role) errors.role = 'Role Required';
+    //     if (!values.firstName) errors.firstName = 'First Name Required';
+    //     if (!values.lastName) errors.lastName = 'Last Name Required';
+    //     if (!values.role) errors.role = 'Role Required';
 
-        return errors
-    }
+    //     return errors
+    // }
 
-    const formik = useFormik<A4FormValues> ({ 
+    const validationSchema = Yup.object({ 
+        firstName: Yup.string().required('First Name Required'),
+        lastName: Yup.string().required('Last Name Required'),
+        role: Yup.string().required('Role Required')
+    });
+
+    const formik = useFormik<A4FormYupValues> ({ 
         initialValues,
         onSubmit,
-        validate,
+        // validate,
+        validationSchema,
         validateOnBlur: true,
         validateOnChange: false
     });
 
     return (
         <div className="component">
-            <form id='A4Form' onSubmit={formik.handleSubmit}>
+            <form id='A4FormYup' onSubmit={formik.handleSubmit}>
 
                     <label>First Name
                     { formik.touched.firstName && formik.errors.firstName ? <div className="error">{formik.errors.firstName}</div> : null }</label>
@@ -73,10 +81,10 @@ const A4Form = () => {
             </form>
 
             <div className="buttonGroup">
-                <button className="button" type='submit' form='A4Form'>Submit</button>
+                <button className="button" type='submit' form='A4FormYup'>Submit</button>
             </div>
         </div>
     );
 };
 
-export default A4Form;
+export default A4FormYup;

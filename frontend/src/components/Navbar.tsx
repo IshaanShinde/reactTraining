@@ -8,7 +8,7 @@ const Navbar = () => {
             <Link className='button' to='/A2'>A2</Link>
             <Link className='button' to='/A3'>A3</Link>
             <Link className='button' to='/A4'>A4</Link>
-            <Link className='button' to='/A5'>A5</Link>
+            <Link className='button' to='/A4Yup'>A4Yup</Link>
         </div>
     );
 };
