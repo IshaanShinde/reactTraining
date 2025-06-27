@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 
-interface A4FormValues {
+export interface A4FormValues {
     firstName: string;
     lastName: string;
     role: string;
@@ -12,16 +12,20 @@ interface A4FormErrors {
     role?: string;
 }
 
-const A4Form = () => {
+interface A4FormProps { 
+    onSubmit: (values: A4FormValues) => void;
+}
+
+const A4Form = ( { onSubmit }: A4FormProps ) => {
 
     const initialValues = {
         firstName: '',
         lastName: '',
         role: ''
     }
-    const onSubmit = (values: A4FormValues) => {
-        console.log(values)
-    }
+    // const onSubmit = (values: A4FormValues) => {
+    //     console.log(values)
+    // }
     const validate = (values: A4FormValues) => {
         let errors: A4FormErrors = {}
 

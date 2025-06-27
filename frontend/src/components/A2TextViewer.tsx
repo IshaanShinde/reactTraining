@@ -5,7 +5,7 @@ interface A2TextiewerProps {
 const A2Textiewer: React.FC<A2TextiewerProps> = ( { value } ) => {
     return(
             <div className='component fill'>
-                <p>{ value || 'Type Something' }</p>
+                <p>{ value || 'Your text will appear here as you type.' }</p>
             </div>
     );
 };

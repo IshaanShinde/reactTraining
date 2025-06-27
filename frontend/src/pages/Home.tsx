@@ -10,7 +10,7 @@ const Home = () => {
             <Link className='subComponent' to='/A1'>Assignment 1</Link>
             <Link className='subComponent' to='/A2'>Assignment 2</Link>
             <Link className='subComponent' to='/A3'>Assignment 3</Link>
-            {/* <Link className='subComponent' to='/A4'>Assignment 4</Link> */}
+            <Link className='subComponent' to='/A4'>Assignment 4</Link>
             <Link className='subComponent' to='/A4Yup'>Assignment 4 + Yup</Link>
         </>
     );
