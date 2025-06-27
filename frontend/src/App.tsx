@@ -24,7 +24,7 @@ function App() {
             <Route path='/A1' element={ <A1/> }/>
             <Route path='/A2' element={ <A2/> }/>
             <Route path='/A3' element={ <A3/> }/>
-            <Route path='/A4' element={ <A4/> }/>
+            {/* <Route path='/A4' element={ <A4/> }/> */}
             <Route path='/A4Yup' element={ <A4Yup/> }/>
 
         </Route>

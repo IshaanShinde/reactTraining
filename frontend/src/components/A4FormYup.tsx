@@ -1,38 +1,28 @@
 import * as Yup from 'yup';
 import { useFormik } from "formik";
 
-interface A4FormYupValues {
+export interface A4FormYupValues {
     firstName: string;
     lastName: string;
     role: string;
 }
 
-// interface A4FormYupErrors {
-//     firstName?: string;
-//     lastName?: string;
-//     role?: string;
-// }
+interface A4FormYupProps {
+    onSubmit: (values: A4FormYupValues) => void;
+}
 
-const A4FormYup = () => {
+const A4FormYup = ( { onSubmit }: A4FormYupProps) => {
 
     const initialValues = {
         firstName: '',
         lastName: '',
         role: ''
     }
-    const onSubmit = (values: A4FormYupValues) => {
-        console.log(values)
-    }
-    // const validate = (values: A4FormYupValues) => {
-    //     let errors: A4FormYupErrors = {}
 
-    //     if (!values.firstName) errors.firstName = 'First Name Required';
-    //     if (!values.lastName) errors.lastName = 'Last Name Required';
-    //     if (!values.role) errors.role = 'Role Required';
-
-    //     return errors
+    // const onSubmit = (values: A4FormYupValues) => {
+    //     console.log(values)
     // }
-
+    
     const validationSchema = Yup.object({ 
         firstName: Yup.string().required('First Name Required'),
         lastName: Yup.string().required('Last Name Required'),
