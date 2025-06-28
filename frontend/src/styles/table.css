@@ -1,7 +1,7 @@
 .table-container {
     flex: 1;
     overflow: auto;
-    max-height: 45vh;
+    max-height: 50vh;
 }
 
 .table-container > table {
