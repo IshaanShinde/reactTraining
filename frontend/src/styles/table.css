@@ -1,0 +1,65 @@
+.table-container {
+    flex: 1;
+    overflow: auto;
+    max-height: 45vh;
+}
+
+.table-container > table {
+    min-width: max-content;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.table-container::-webkit-scrollbar-thumb {
+    background-color: var(--component-border);
+    border-radius: 8px;
+    border: 2px solid var(--bg);
+}
+
+.table-container::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+table {
+    border: 1px solid var(--component-border);
+    background-color: var(--bg);
+    font-size: 0.9rem;
+}
+/* 
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} */
+
+th {
+    background-color: var(--component-bg);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: 1px solid var(--component-border);
+    font-weight: bold;
+    color: var(--text);
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--component-border);
+    white-space: nowrap;
+    color: var(--text);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--component-bg);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+thead tr {
+    border-bottom: 2px solid var(--component-border);
+}

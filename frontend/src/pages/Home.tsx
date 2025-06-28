@@ -12,6 +12,8 @@ const Home = () => {
             <Link className='subComponent' to='/A3'>Assignment 3</Link>
             <Link className='subComponent' to='/A4'>Assignment 4</Link>
             <Link className='subComponent' to='/A4Yup'>Assignment 4 + Yup</Link>
+            <Link className='subComponent' to='/A5'>Assignment 5</Link>
+            
         </>
     );
 };

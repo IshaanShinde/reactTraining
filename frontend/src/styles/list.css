@@ -1,0 +1,21 @@
+ul {
+    /* list-style: none; */
+    /* padding: 0; */
+    /* margin: 1rem 0; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+
+li {
+    margin-left: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    transition: background 0.2s ease;
+    flex: 1 1 calc(50% - 1rem);
+    box-sizing: border-box;
+}
+
+li:hover {
+  background: var(--hover-bg);
+}

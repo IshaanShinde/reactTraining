@@ -9,6 +9,7 @@ import A2 from './pages/A2';
 import A3 from './pages/A3';
 import A4 from './pages/A4';
 import A4Yup from './pages/A4Yup';
+import A5 from './pages/A5';
 
 import Home from './pages/Home';
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/A3' element={ <A3/> }/>
             <Route path='/A4' element={ <A4/> }/>
             <Route path='/A4Yup' element={ <A4Yup/> }/>
+            <Route path='/A5' element={ <A5/> }/>
 
         </Route>
         </Routes>
