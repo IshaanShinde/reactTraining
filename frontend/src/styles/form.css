@@ -12,27 +12,45 @@ label {
 input {
     padding: 1rem;
     margin-bottom: 1rem;
-    
-    border: 2px solid var(--btn-border);
-    background-color: var(--bg);
-    color: var(--btn-text);
 
     cursor:text;
-    transition: all 0.2s ease;
     justify-content: center;
     align-items: center;
+
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: inset 2px 5px 10px var(--btn-shadow-dark);
+    transition: 200ms ease-in-out;
+}
+
+input:focus {
+    transform: scale(1.01);
+    /* border: 1px solid var(--btn-border); */
+    box-shadow: 10px 10px 70px var(--btn-shadow-dark), -13px -13px 70px var(--btn-shadow-light);
+    
 }
 
 select {
     padding: 1rem;
     margin-bottom: 1rem;
     
-    border: 2px solid var(--btn-border);
+    border: 1px solid var(--btn-border);
     background-color: var(--bg);
     color: var(--btn-text);
 
     cursor:pointer;
-    transition: all 0.2s ease;
+    /* transition: all 0.2s ease; */
     justify-content: center;
     align-items: center;
+
+    box-shadow: 6px 6px 12px var(--btn-shadow-dark),
+               -6px -6px 12px var(--btn-shadow-light);
+}
+
+select:focus {
+    transform: scale(1.01);
+    border: 1px solid var(--btn-border);
+    box-shadow: 10px 10px 70px var(--btn-shadow-dark), -13px -13px 70px var(--btn-shadow-light);   
 }

@@ -1,0 +1,82 @@
+:root {
+    /* Dark Forest High Contrast (Default) */
+    --cd-bg: #0a100d;
+    --cd-text: #f0f7f4;
+    --cd-component-border: #3a5a40;
+    --cdh-bg: #14213d;
+    --cdh-text: #ffffff;
+    --cdh-component-border: #588157;
+    
+    /* New Dark Theme Button Colors */
+    --cd-btn-bg: #2a3a24;
+    --cd-btn-text: #e0f0ea;
+    --cd-btn-border: #3a5a40;
+    --cdh-btn-bg: #3d4d37;
+    --cdh-btn-text: #ffffff;
+    --cdh-btn-border: #588157;
+
+    /* Light Theme */
+    --cl-bg: #f8f9fa;
+    --cl-text: #212529;
+    --cl-component-border: #ced4da;
+    --clh-bg: #e9ecef;
+    --clh-text: #16181b;
+    --clh-component-border: #adb5bd;
+    
+    /* New Light Theme Button Colors */
+    --cl-btn-bg: #e2e6ea;
+    --cl-btn-text: #212529;
+    --cl-btn-border: #ced4da;
+    --clh-btn-bg: #d1d7dd;
+    --clh-btn-text: #16181b;
+    --clh-btn-border: #adb5bd;
+
+    /* Active Theme (Dark by default) */
+    --error: #ff3d3d;
+    --bg-scrollbar: #4ba189bb;
+    --bg: var(--cd-bg);
+    --text: var(--cd-text);
+    --component-border: var(--cd-component-border);
+    --hover-bg: var(--cdh-bg);
+    --hover-text: var(--cdh-text);
+    --hover-border: var(--cdh-component-border);
+    --btn-bg: var(--cd-btn-bg);
+    --btn-text: var(--cd-btn-text);
+    --btn-border: var(--cd-btn-border);
+    --btn-hover-bg: var(--cdh-btn-bg);
+    --btn-hover-text: var(--cdh-btn-text);
+    --btn-hover-border: var(--cdh-btn-border);
+}
+
+[data-theme="light"] {
+    --bg: var(--cl-bg);
+    --text: var(--cl-text);
+    --component-border: var(--cl-component-border);
+    --hover-bg: var(--clh-bg);
+    --hover-text: var(--clh-text);
+    --hover-border: var(--clh-component-border);
+    --btn-bg: var(--cl-btn-bg);
+    --btn-text: var(--cl-btn-text);
+    --btn-border: var(--cl-btn-border);
+    --btn-hover-bg: var(--clh-btn-bg);
+    --btn-hover-text: var(--clh-btn-text);
+    --btn-hover-border: var(--clh-btn-border);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--component-border);
+    color: var(--text);
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+    .theme-toggle:hover {
+        background: var(--hover-border);
+    }

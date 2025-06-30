@@ -7,12 +7,12 @@ const Home = () => {
                 <h1>reactTraning Assignments</h1>
             </div>
 
-            <Link className='subComponent' to='/A1'>Assignment 1</Link>
-            <Link className='subComponent' to='/A2'>Assignment 2</Link>
-            <Link className='subComponent' to='/A3'>Assignment 3</Link>
-            <Link className='subComponent' to='/A4'>Assignment 4</Link>
-            <Link className='subComponent' to='/A4Yup'>Assignment 4 + Yup</Link>
-            <Link className='subComponent' to='/A5'>Assignment 5</Link>
+            <Link className='component' to='/A1'>Assignment 1</Link>
+            <Link className='component' to='/A2'>Assignment 2</Link>
+            <Link className='component' to='/A3'>Assignment 3</Link>
+            <Link className='component' to='/A4'>Assignment 4</Link>
+            <Link className='component' to='/A4Yup'>Assignment 4 + Yup</Link>
+            <Link className='component' to='/A5'>Assignment 5</Link>
             
         </>
     );

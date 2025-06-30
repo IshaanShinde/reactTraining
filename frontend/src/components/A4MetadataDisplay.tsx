@@ -6,7 +6,7 @@ interface A4MetadataDisplayProps {
 
 const A4MetadataDisplay = ( { data }: A4MetadataDisplayProps ) => {
     return (
-        <div className="component fill">
+        <div className="subComponent fill">
             <pre>{ JSON.stringify( data, null, 2 ) }</pre>
         </div>
     );
